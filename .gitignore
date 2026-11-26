@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Datos (no redistribuibles / descargables)
+data/
+
+mf.py
+
+# Entorno y editor
+.vscode/
+.venv/
+venv/
+.env
+
+# Ignorar todo el contenido de outputs
+outputs/*
+
+# Permitir la carpeta models
+!outputs/models/
+
+# Permitir únicamente estos dos modelos
+outputs/models/*
+!outputs/models/catboost.joblib
+!outputs/models/catboost_transportable.joblib
